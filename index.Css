@@ -1,6 +1,4 @@
-body{
-    height: 1000vh;
-}
+
 @media (max-width: 991.98px) {
     .custom-responsive-width {
         width: 90% !important;
