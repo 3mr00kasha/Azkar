@@ -124,15 +124,15 @@ fetch("Azkar.json").then((res) => {
         }
     };
 
-    nex_btn.onclick = function handleNext() {
+    nex_btn.onclick = async function handleNext() {
         if (parseInt(cou.innerHTML) > 0) {
-        Swal.fire({
-    title: 'خطأ',
-    text: 'أكمِل الذكر قبل الانتقال',
-    icon: 'error',
-    confirmButtonText: 'اشطاا '  
-});
-
+        await Swal.fire({
+        title: 'خطأ',
+        text: 'أكمِل الذكر قبل الانتقال',
+        icon: 'error',
+        confirmButtonText: 'اشطاا '  
+        });
+            return;
         }
 
         i++;
@@ -145,7 +145,6 @@ fetch("Azkar.json").then((res) => {
             nex_btn.innerText = "أعد البداية";
             cou.innerText = "انتهيت";
 
-            location.reload();
 
             nex_btn.onclick = () => {
                 i = 0;
