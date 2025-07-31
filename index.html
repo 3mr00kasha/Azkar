@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salati</title>
+    <link rel="stylesheet" href="index.Css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body style="background-color: currentColor">
+    <div
+      class="row Salah justify-content-center align-items-center"
+      style="margin: auto; margin-top: 20px"
+    >
+      <div class="col d-flex justify-content-center align-items-center">
+        <div class="times">
+          <div
+            class="row"
+            id="clock"
+            style="font-size: 20px; color: #00b3ff; font-weight: bold"
+          ></div>
+          <div
+            class="row"
+            id="months"
+            style="font-size: 20px; color: #5e696e"
+          ></div>
+          <div
+            class="row"
+            id="date"
+            style="font-size: 20px; color: #5e696e"
+          ></div>
+          <div class="col">
+            <div class="row Salah_times">
+              <div class="col">fajr</div>
+              <div
+                class="col"
+                style="
+                  border: 1px solid #0f2027;
+                  font-size: 20px;
+                  border-radius: 10px;
+                "
+                id="fajr"
+              ></div>
+              <div class="col">الفجر</div>
+            </div>
+            <div class="row Salah_times">
+              <div class="col">Sunrise</div>
+              <div
+                class="col"
+                style="
+                  border: 1px solid #0f2027;
+                  font-size: 20px;
+                  border-radius: 10px;
+                "
+                id="Sunrise"
+              ></div>
+              <div class="col">الشروق</div>
+            </div>
+          </div>
+          <div class="row Salah_times">
+            <div class="col">Dhuhr</div>
+            <div
+              class="col"
+              style="
+                border: 1px solid #0f2027;
+                width: 20%;
+                font-size: 20px;
+                border-radius: 10px;
+              "
+              id="Dhuhr"
+            ></div>
+            <div class="col">الظهر</div>
+          </div>
+          <div class="row Salah_times">
+            <div class="col">Asr</div>
+            <div
+              class="col"
+              style="
+                border: 1px solid #0f2027;
+                font-size: 20px;
+                border-radius: 10px;
+              "
+              id="Asr"
+            ></div>
+            <div class="col">العصر</div>
+          </div>
+          <div class="row Salah_times">
+            <div class="col">Maghrib</div>
+            <div
+              class="col"
+              style="
+                border: 1px solid #0f2027;
+                font-size: 20px;
+                border-radius: 10px;
+              "
+              id="Maghrib"
+            ></div>
+            <div class="col">المغرب</div>
+          </div>
+          <div class="row Salah_times">
+            <div class="col">Isha</div>
+            <div
+              class="col"
+              style="
+                border: 1px solid #0f2027;
+                font-size: 20px;
+                border-radius: 10px;
+              "
+              id="Isha"
+            ></div>
+            <div class="col">العشاء</div>
+          </div>
+          <div class="row Salah_times">
+            <div
+              class="col"
+              style="font-size: 15px; color: #00b3ff; font-weight: bold"
+              id="next"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container azkar">
+      <div class="row" style="text-align: center; margin-top: 30px">
+        <div class="col">
+          <button data-bs-toggle="modal" data-bs-target="#SabahModal">
+            اذكار الصباح
+          </button>
+          <div
+            class="modal fade"
+            id="SabahModal"
+            tabindex="-1"
+            aria-labelledby="SabahModallLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="SabahModallLabel">
+                    <button id="next_zekr">التالى</button>
+                  </h1>
+                </div>
+                <div class="modal-body" id="zekr_div">
+                  اللّهُ لاَ إِلَـهَ إِلاَّ هُوَ الْحَيُّ الْقَيُّومُ لاَ
+                  تَأْخُذُهُ سِنَةٌ وَلاَ نَوْمٌ لَّهُ مَا فِي السَّمَاوَاتِ
+                  وَمَا فِي الأَرْضِ مَن ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلاَّ
+                  بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ
+                  وَلاَ يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلاَّ بِمَا شَاء
+                  وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالأَرْضَ وَلاَ يَؤُودُهُ
+                  حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ.
+                </div>
+                <div class="modal-footer">
+                  <button style="margin-right: 30%" type="button" id="counter">
+                    1
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    اغلاق
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <button data-bs-toggle="modal" data-bs-target="#SabahModal">
+            اذكار المساء
+          </button>
+          <div
+            class="modal fade"
+            id="SabahModal"
+            tabindex="-1"
+            aria-labelledby="SabahModallLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="SabahModallLabel">
+                    <button id="next_zekr">التالي</button>
+                  </h1>
+                </div>
+                <div class="modal-body" id="zekr_div">
+                  اللّهُ لاَ إِلَـهَ إِلاَّ هُوَ الْحَيُّ الْقَيُّومُ لاَ
+                  تَأْخُذُهُ سِنَةٌ وَلاَ نَوْمٌ لَّهُ مَا فِي السَّمَاوَاتِ
+                  وَمَا فِي الأَرْضِ مَن ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلاَّ
+                  بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ
+                  وَلاَ يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلاَّ بِمَا شَاء
+                  وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالأَرْضَ وَلاَ يَؤُودُهُ
+                  حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ.
+                </div>
+                <div class="modal-footer">
+                  <button style="margin-right: 30%" type="button" id="counter">
+                    1
+                  </button>
+                  <button
+                    id="Mclose"
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    اغلاق
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
