@@ -42,7 +42,7 @@ setInterval(() => {
     let hour = time_now.getHours();
     let minute = time_now.getMinutes();
     let second = time_now.getSeconds();
-    if (hour >= 12) {
+    if (hour > 12) {
         document.getElementById("clock").innerHTML=`${hour -12} : ${minute} : ${second} PM`
     } else {
         document.getElementById("clock").innerHTML=`${hour} : ${minute} : ${second} AM`
